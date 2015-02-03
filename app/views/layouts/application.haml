@@ -1,0 +1,20 @@
+!!!
+%html{ 'xml:lang' => 'en', lang: 'en' }
+  %head
+    %title Xports List
+    %meta{ 'http-equiv' => 'Content-Type', content: 'text/html; charset=utf-8' }
+    %meta{ 'name' => 'viewport', 'content' => 'width=device-width,  maximum-scale=1.0, user-scalable=0' }
+    %meta{ 'name' => 'apple-mobile-web-app-capable', 'content' => 'yes' }
+    %meta{ 'name' => 'apple-touch-icon', 'content' => '/icon.png' }
+    %meta{ 'name' => 'apple-mobile-web-app-status-bar-style', 'content' => 'default' }
+    %meta{ 'http-equiv' => 'X-UA-Compatible', content: 'IE=edge' }
+    %link{ rel: 'shortcut icon', href: '/favicon.ico' }
+
+    = yield :head if content_for?(:head)
+
+    = csrf_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  %body
+    = yield
+    = yield :scripts if content_for?(:scripts)
