@@ -11,6 +11,7 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'puma'
 
 group :development do
   gem "quiet_assets"
@@ -20,4 +21,8 @@ end
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
