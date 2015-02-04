@@ -1,23 +1,14 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  tour: Tour
+  contact_us: Contact Us
+  slogan: Discover new Xports and new places to practice around the world.
+          Help us build the extreme sports network.
+  discover: Discover!
+  discover_title: Full list of Extreme Sports
+  discover_description: 'Categorized in the four elements: earth, air, water...
+                        and fire snow. Each sport has the information you need to
+                        know thanks to the help of the community.'
+  share: Share!
+  share_title: Pic and metadata
+  share_description: Tell us what, where, how much and give the commnity some tips.
+  footer: By Webtisans with <3
