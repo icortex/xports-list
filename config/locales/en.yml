@@ -12,3 +12,17 @@ en:
   share_title: Pic and metadata
   share_description: Tell us what, where, how much and give the commnity some tips.
   footer: By Webtisans with <3
+
+  contacts:
+    label:
+      title: Let us know your interest
+      message: We will contact you very soon.
+      message_sent: Thank you, %{name}. We really appreciate it!
+    placeholder:
+      name: Name*
+      email: Email*
+      message: Message*
+    btn:
+      send_message: "Share your love with us"
+    error:
+      all_required: "All fields are required."

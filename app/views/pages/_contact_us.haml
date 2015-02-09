@@ -1,0 +1,20 @@
+.row.text-center
+  .col-md-4.col-md-offset-4
+    %h2= t('contacts.label.title')
+    %p.lead= t('contacts.label.message')
+    = form_for :contact, url: contacts_path, remote: true,
+      html: { class: 'form-horizontal', id: 'contact-form' } do |f|
+      .form-group
+        = f.text_field :name, class: 'form-control required',
+          placeholder: t('contacts.placeholder.name')
+      .form-group
+        = f.email_field :email, class: 'form-control required',
+          placeholder: t('contacts.placeholder.email')
+      .form-group
+        = f.text_area :message, class: 'form-control required',
+          placeholder: t('contacts.placeholder.message')
+      = f.submit t('contacts.btn.send_message'), class: 'btn btn-default btn-lg'
+
+= content_for :js do
+  :javascript
+    $("#contact-form").validate();

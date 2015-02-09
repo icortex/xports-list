@@ -13,8 +13,7 @@
         %li
           %a{ href: "#tour" }= t('tour')
         %li
-          %a{:href => "#"}= t('contact_us')
-
+          = link_to t('contact_us'), root_path(anchor: 'contact')
 %a{ href: '#tour' }
   %section#platformhead.platformblock.colorblock
     %article.centerplatform
@@ -38,8 +37,7 @@
         = t('share_title')
       %p.lead= t('share_description')
 %section#contact
-  .row.text-center
-    = link_to 'Share your love with us', '#', class: 'btn btn-default btn-lg'
+  = render 'contact_us'
 %footer
   .row
     %footer.text-center
